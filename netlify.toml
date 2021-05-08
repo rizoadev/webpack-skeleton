@@ -1,0 +1,27 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/*.woff"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Content-Type = "application/font-woff"
+
+[[headers]]
+  for = "/*.woff2"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Content-Type = "application/font-woff2"
+
+[[headers]]
+  for = "/*.ttf"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Content-Type = "application/font-ttf"
+
+
+[build]
+  # This is the directory to change to before starting a build.
+  publish    = "./dist"
