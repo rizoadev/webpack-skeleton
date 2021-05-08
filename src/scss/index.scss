@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700&display=swap');
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import '../../node_modules/bootstrap/scss/functions';
+
+// 2. Include any default variable overrides here
+
+// scss-docs-start color-variables
+
+$primary: #04aad3;
+$secondary: #326580;
+$success: #28a745;
+$info: #c3e3f7;
+$warning: #f6aa26;
+$danger: #dc3545;
+$light: #e6cae0;
+$dark: #3c3c3c;
+
+// scss-docs-start theme-colors-map
+$theme-colors: ('primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark);
+$body-color: #040404;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+
+// 4. Include any optional Bootstrap components as you like
+@import '../../node_modules/bootstrap/scss/root';
+@import '../../node_modules/bootstrap/scss/reboot';
+@import '../../node_modules/bootstrap/scss/buttons';
+
+body {
+    color: #5d4b31;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: #fff;
+}
+
+.btn,
+.btn:focus,
+.btn:hover,
+.btn:active,
+.btn:visited {
+    outline: none;
+    box-shadow: none;
+}
